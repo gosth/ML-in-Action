@@ -73,3 +73,9 @@ def classifyPerson():
                        minVals) / ranges, normMat,datingLabels,3)
     print "You will probably like this person: ", \
            resultList[classifierResult -1]
+
+def img2vector(filename):
+    returnVect = zeros((1,1024))
+    fr = open(filename)
+    for i in range(32):
+        lineStr = fr.readline()
